@@ -30,8 +30,7 @@
   },
   "dependencies": {
     "@types/eslint__js": "^8.42.3",
-    "confusing-browser-globals": "^1.0.11",
-    "globals": "^15.11.0"
+    "confusing-browser-globals": "^1.0.11"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
