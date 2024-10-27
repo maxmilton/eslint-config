@@ -1,0 +1,45 @@
+{
+  "name": "@maxmilton/eslint-config",
+  "version": "0.0.1",
+  "description": "ESLint configuration with support for Bun, TypeScript, and more",
+  "repository": "maxmilton/eslint-config",
+  "homepage": "https://github.com/maxmilton/eslint-config",
+  "author": "Max Milton <max@happyhackers.xyz>",
+  "license": "MIT",
+  "type": "module",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "files": ["src"],
+  "scripts": {
+    "lint": "bun lint:fmt && bun lint:js && bun lint:ts",
+    "lint:fmt": "biome check",
+    "lint:js": "eslint",
+    "lint:ts": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "peerDependencies": {
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-unicorn": ">=56.0.0",
+    "typescript-eslint": "^8.0.0"
+  },
+  "peerDependenciesMeta": {
+    "eslint-plugin-unicorn": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@types/eslint__js": "^8.42.3",
+    "confusing-browser-globals": "^1.0.11"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@eslint/js": "9.13.0",
+    "@types/bun": "1.1.12",
+    "@types/confusing-browser-globals": "1.0.3",
+    "eslint": "9.13.0",
+    "eslint-plugin-unicorn": "56.0.0",
+    "typescript": "5.6.3",
+    "typescript-eslint": "8.11.0"
+  }
+}

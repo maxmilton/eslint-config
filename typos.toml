@@ -1,0 +1,5 @@
+[default]
+#locale = "en-au"
+extend-ignore-identifiers-re = [
+  "IIFEs",
+]
