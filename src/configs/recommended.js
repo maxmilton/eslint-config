@@ -1,3 +1,4 @@
+import globals from 'globals';
 import airbnbBestPractices from '../rules-airbnb/best-practices.js';
 import airbnbErrors from '../rules-airbnb/errors.js';
 import airbnbES6 from '../rules-airbnb/es6.js';
@@ -5,9 +6,8 @@ import airbnbES6 from '../rules-airbnb/es6.js';
 import airbnbNode from '../rules-airbnb/node.js';
 import airbnbStrict from '../rules-airbnb/strict.js';
 import airbnbStyle from '../rules-airbnb/style.js';
-import airbnbVariables from '../rules-airbnb/variables.js';
-
 import airbnbTypeScriptBase from '../rules-airbnb/typescript-base.js';
+import airbnbVariables from '../rules-airbnb/variables.js';
 
 const OFF = 0;
 const WARN = 1;
@@ -15,6 +15,18 @@ const ERROR = 2;
 
 /** @type {import('eslint').Linter.Config} */
 export default {
+  languageOptions: {
+    globals: {
+      ...globals.browser,
+      ...globals.node,
+      ...globals.worker,
+    },
+    // parserOptions: {
+    //   ecmaFeatures: {
+    //     jsx: true,
+    //   },
+    // },
+  },
   // settings: {
   //   // // https://github.com/iamturns/eslint-config-airbnb-typescript/blob/303e346214847385bee4016367ff3b1b9978e337/lib/shared.js
   //
