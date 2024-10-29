@@ -53,17 +53,23 @@ export default {
 
     ...airbnbTypeScriptBase,
 
-    /* Covered by biome formatter */
+    /* Covered by Biome formatter */
     '@typescript-eslint/indent': OFF,
+    curly: OFF,
+    'func-call-spacing': OFF,
     'function-paren-newline': OFF,
     'implicit-arrow-linebreak': OFF,
     'max-len': OFF,
+    'no-nested-ternary': OFF, // kind of useful but Biome formats it well anyway
+    'no-undef': OFF, // TypeScript and Biome have superior checking
+    'nonblock-statement-body-position': OFF,
     'object-curly-newline': OFF,
     'operator-linebreak': OFF,
     'unicorn/no-nested-ternary': OFF,
 
-    // TypeScript and Biome have superior checking
-    'no-undef': OFF,
+    // TODO: Remove. This is actually great but Biome doesn't have a formatter
+    // config option for it and always uses lowercase.
+    'unicorn/number-literal-case': OFF,
 
     // Worse performance and poor support
     'unicorn/prefer-string-replace-all': OFF,
