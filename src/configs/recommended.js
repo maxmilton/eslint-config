@@ -59,12 +59,14 @@ export default {
     'func-call-spacing': OFF,
     'function-paren-newline': OFF,
     'implicit-arrow-linebreak': OFF,
+    'lines-between-class-members': OFF,
     'max-len': OFF,
     'no-nested-ternary': OFF, // kind of useful but Biome formats it well anyway
     'no-undef': OFF, // TypeScript and Biome have superior checking
     'nonblock-statement-body-position': OFF,
     'object-curly-newline': OFF,
     'operator-linebreak': OFF,
+    'space-before-function-paren': OFF,
     'unicorn/no-nested-ternary': OFF,
 
     // TODO: Remove. This is actually great but Biome doesn't have a formatter
