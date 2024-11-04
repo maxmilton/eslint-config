@@ -59,6 +59,14 @@ export default {
       selector: 'typeLike',
       format: ['PascalCase'],
     },
+
+    // XXX: Make same as oxc no-unused-vars rule; unused vars should be prefixed with an underscore; but no unused constants (UPPER_CASE)
+    {
+      selector: 'variable',
+      modifiers: ['unused'],
+      leadingUnderscore: 'require',
+      format: ['camelCase', 'PascalCase'],
+    },
   ],
 
   // XXX: Removed from typescript-eslint v8.0.0
