@@ -84,7 +84,16 @@ export default {
     'import/prefer-default-export': OFF,
     'no-restricted-syntax': OFF,
     'no-void': OFF,
-    'unicorn/filename-case': OFF,
+    'unicorn/filename-case': [
+      WARN,
+      {
+        cases: {
+          kebabCase: true,
+          pascalCase: true, // components
+        },
+        multipleFileExtensions: false,
+      },
+    ],
     'unicorn/import-style': WARN,
     'unicorn/no-abusive-eslint-disable': WARN,
     'unicorn/no-null': OFF,
