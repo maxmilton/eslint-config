@@ -4,7 +4,4 @@
 *.lock
 !bun.lock
 /coverage/
-/dist/
 /node_modules/
-/playwright-report/
-/test-results/
