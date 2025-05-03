@@ -18,12 +18,13 @@ jobs:
         with:
           bun-version: latest
       - run: bun install --frozen-lockfile
+      - run: bun run build
       - run: bun run lint
       - run: bun run test
       - uses: actions/setup-node@v4
         with:
           node-version: latest
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: "https://registry.npmjs.org"
       - name: Extract npm tag
         run: |
           TAG=${{ github.ref }}

@@ -7,9 +7,7 @@
     "esModuleInterop": false,
     "resolveJsonModule": true,
     "skipLibCheck": true,
-
     "allowJs": true, // type=module
-    "noEmit": true,
 
     "strict": true,
     "allowUnreachableCode": false,
@@ -22,12 +20,5 @@
     "noUnusedParameters": false, // covered by eslint
     "verbatimModuleSyntax": true
   },
-  "include": [
-    "*.config.mjs",
-    "*.config.ts",
-    "*.d.ts",
-    "build.ts",
-    "src",
-    "test"
-  ]
+  "include": ["*.config.js", "src", "test"]
 }

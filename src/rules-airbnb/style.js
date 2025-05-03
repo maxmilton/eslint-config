@@ -67,27 +67,16 @@ export default {
     'last',
     {
       exceptions: {
-        // biome-ignore lint/style/useNamingConvention: ESLint naming
         ArrayExpression: false,
-        // biome-ignore lint/style/useNamingConvention: ESLint naming
         ArrayPattern: false,
-        // biome-ignore lint/style/useNamingConvention: ESLint naming
         ArrowFunctionExpression: false,
-        // biome-ignore lint/style/useNamingConvention: ESLint naming
         CallExpression: false,
-        // biome-ignore lint/style/useNamingConvention: ESLint naming
         FunctionDeclaration: false,
-        // biome-ignore lint/style/useNamingConvention: ESLint naming
         FunctionExpression: false,
-        // biome-ignore lint/style/useNamingConvention: ESLint naming
         ImportDeclaration: false,
-        // biome-ignore lint/style/useNamingConvention: ESLint naming
         ObjectExpression: false,
-        // biome-ignore lint/style/useNamingConvention: ESLint naming
         ObjectPattern: false,
-        // biome-ignore lint/style/useNamingConvention: ESLint naming
         VariableDeclaration: false,
-        // biome-ignore lint/style/useNamingConvention: ESLint naming
         NewExpression: false,
       },
     },
@@ -155,31 +144,23 @@ export default {
     'error',
     2,
     {
-      // biome-ignore lint/style/useNamingConvention: ESLint naming
       SwitchCase: 1,
-      // biome-ignore lint/style/useNamingConvention: ESLint naming
       VariableDeclarator: 1,
       outerIIFEBody: 1,
       // MemberExpression: null,
-      // biome-ignore lint/style/useNamingConvention: ESLint naming
       FunctionDeclaration: {
         parameters: 1,
         body: 1,
       },
-      // biome-ignore lint/style/useNamingConvention: ESLint naming
       FunctionExpression: {
         parameters: 1,
         body: 1,
       },
-      // biome-ignore lint/style/useNamingConvention: ESLint naming
       CallExpression: {
         arguments: 1,
       },
-      // biome-ignore lint/style/useNamingConvention: ESLint naming
       ArrayExpression: 1,
-      // biome-ignore lint/style/useNamingConvention: ESLint naming
       ObjectExpression: 1,
-      // biome-ignore lint/style/useNamingConvention: ESLint naming
       ImportDeclaration: 1,
       flatTernaryExpressions: false,
       // list derived from https://github.com/benjamn/ast-types/blob/HEAD/def/jsx.js
@@ -311,7 +292,6 @@ export default {
       max: 50,
       skipBlankLines: true,
       skipComments: true,
-      // biome-ignore lint/style/useNamingConvention: ESLint naming
       IIFEs: true,
     },
   ],
@@ -507,25 +487,21 @@ export default {
   'object-curly-newline': [
     'error',
     {
-      // biome-ignore lint/style/useNamingConvention: ESLint naming
       ObjectExpression: {
         minProperties: 4,
         multiline: true,
         consistent: true,
       },
-      // biome-ignore lint/style/useNamingConvention: ESLint naming
       ObjectPattern: {
         minProperties: 4,
         multiline: true,
         consistent: true,
       },
-      // biome-ignore lint/style/useNamingConvention: ESLint naming
       ImportDeclaration: {
         minProperties: 4,
         multiline: true,
         consistent: true,
       },
-      // biome-ignore lint/style/useNamingConvention: ESLint naming
       ExportDeclaration: {
         minProperties: 4,
         multiline: true,

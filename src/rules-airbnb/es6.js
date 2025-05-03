@@ -149,12 +149,10 @@ export default {
   'prefer-destructuring': [
     'error',
     {
-      // biome-ignore lint/style/useNamingConvention: ESLint naming
       VariableDeclarator: {
         array: false,
         object: true,
       },
-      // biome-ignore lint/style/useNamingConvention: ESLint naming
       AssignmentExpression: {
         array: true,
         object: false,
