@@ -18,7 +18,6 @@ jobs:
         with:
           bun-version: latest
       - run: bun install --frozen-lockfile
-      - run: bun run build
       - run: bun run lint
       - run: bun run test
       - uses: actions/setup-node@v4
