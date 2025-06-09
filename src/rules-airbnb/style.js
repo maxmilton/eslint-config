@@ -628,14 +628,28 @@ export default {
     'always',
     {
       line: {
-        exceptions: ['-', '+'],
-        markers: ['=', '!', '/'], // space here to support sprockets directives, slash for TS /// comments
+        // exceptions: ['-', '+'],
+        // markers: ['=', '!', '/'], // space here to support sprockets directives, slash for TS /// comments
+        markers: ['!', '/'], // slash for TS /// comments
       },
       block: {
-        // @ and # to support minification annotations
-        // https://github.com/terser/terser#annotations
-        exceptions: ['-', '+', '@', '#'],
-        markers: ['=', '!', ':', '::'], // space here to support sprockets directives and flow comment types
+        // exceptions: ['-', '+'],
+        // markers: ['=', '!', ':', '::'], // space here to support sprockets directives and flow comment types
+        markers: [
+          '!',
+          // Support minification annotations
+          // https://github.com/terser/terser#annotations
+          '@__INLINE__',
+          '@__NOINLINE__',
+          '@__PURE__',
+          '@__KEY__',
+          '@__MANGLE_PROP__',
+          '#__INLINE__',
+          '#__NOINLINE__',
+          '#__PURE__',
+          '#__KEY__',
+          '#__MANGLE_PROP__',
+        ],
         balanced: true,
       },
     },
