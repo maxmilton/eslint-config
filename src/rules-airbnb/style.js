@@ -632,7 +632,9 @@ export default {
         markers: ['=', '!', '/'], // space here to support sprockets directives, slash for TS /// comments
       },
       block: {
-        exceptions: ['-', '+'],
+        // @ and # to support minification annotations
+        // https://github.com/terser/terser#annotations
+        exceptions: ['-', '+', '@', '#'],
         markers: ['=', '!', ':', '::'], // space here to support sprockets directives and flow comment types
         balanced: true,
       },
