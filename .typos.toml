@@ -1,5 +1,0 @@
-[default]
-#locale = "en-gb"
-extend-ignore-identifiers-re = [
-  "IIFEs",
-]
