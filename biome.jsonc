@@ -1,21 +1,30 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
+  "assist": {
+    "actions": {
+      "recommended": true
+    }
+  },
   "formatter": {
     "useEditorconfig": false,
     "formatWithErrors": true,
     "indentStyle": "space"
   },
   "linter": {
+    "domains": {
+      "project": "all"
+    },
     "rules": {
       "recommended": true,
       "style": {
-        "noNonNullAssertion": "off",
-        "useTemplate": "off"
+        "noNonNullAssertion": "off"
       },
       "suspicious": {
-        "noAssignInExpressions": "off",
-        "noConstEnum": "off"
+        "noAssignInExpressions": "off"
+      },
+      "nursery": {
+        "noUnresolvedImports": "off" // covered by typescript
       }
     }
   },
@@ -26,15 +35,6 @@
     }
   },
   "overrides": [
-    {
-      "includes": [".vscode/*.json", "package.json", "tsconfig*.json"],
-      "json": {
-        "parser": {
-          "allowComments": true,
-          "allowTrailingCommas": true
-        }
-      }
-    },
     {
       "includes": ["**/*.spec.ts", "**/*.test.ts", "test/**"],
       "formatter": {
