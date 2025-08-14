@@ -94,8 +94,7 @@ export default {
   // Replace Airbnb 'default-param-last' rule with '@typescript-eslint' version
   // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/default-param-last.md
   'default-param-last': 'off',
-  '@typescript-eslint/default-param-last':
-    airbnbBestPractices['default-param-last'],
+  '@typescript-eslint/default-param-last': airbnbBestPractices['default-param-last'],
 
   // Replace Airbnb 'dot-notation' rule with '@typescript-eslint' version
   // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/dot-notation.md
@@ -128,20 +127,17 @@ export default {
   // Replace Airbnb 'no-array-constructor' rule with '@typescript-eslint' version
   // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-array-constructor.md
   'no-array-constructor': 'off',
-  '@typescript-eslint/no-array-constructor':
-    airbnbStyle['no-array-constructor'],
+  '@typescript-eslint/no-array-constructor': airbnbStyle['no-array-constructor'],
 
   // Replace Airbnb 'no-dupe-class-members' rule with '@typescript-eslint' version
   // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-dupe-class-members.md
   'no-dupe-class-members': 'off',
-  '@typescript-eslint/no-dupe-class-members':
-    airbnbES6['no-dupe-class-members'],
+  '@typescript-eslint/no-dupe-class-members': airbnbES6['no-dupe-class-members'],
 
   // Replace Airbnb 'no-empty-function' rule with '@typescript-eslint' version
   // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-function.md
   'no-empty-function': 'off',
-  '@typescript-eslint/no-empty-function':
-    airbnbBestPractices['no-empty-function'],
+  '@typescript-eslint/no-empty-function': airbnbBestPractices['no-empty-function'],
 
   // Replace Airbnb 'no-extra-parens' rule with '@typescript-eslint' version
   // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-parens.md
@@ -163,8 +159,7 @@ export default {
   // Replace Airbnb 'no-loss-of-precision' rule with '@typescript-eslint' version
   // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-loss-of-precision.md
   'no-loss-of-precision': 'off',
-  '@typescript-eslint/no-loss-of-precision':
-    airbnbErrors['no-loss-of-precision'],
+  '@typescript-eslint/no-loss-of-precision': airbnbErrors['no-loss-of-precision'],
 
   // Replace Airbnb 'no-loop-func' rule with '@typescript-eslint' version
   // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-loop-func.md
@@ -174,8 +169,7 @@ export default {
   // Replace Airbnb 'no-magic-numbers' rule with '@typescript-eslint' version
   // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-magic-numbers.md
   'no-magic-numbers': 'off',
-  '@typescript-eslint/no-magic-numbers':
-    airbnbBestPractices['no-magic-numbers'],
+  '@typescript-eslint/no-magic-numbers': airbnbBestPractices['no-magic-numbers'],
 
   // Replace Airbnb 'no-redeclare' rule with '@typescript-eslint' version
   // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-redeclare.md
@@ -203,8 +197,7 @@ export default {
   // Replace Airbnb 'no-unused-expressions' rule with '@typescript-eslint' version
   // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-expressions.md
   'no-unused-expressions': 'off',
-  '@typescript-eslint/no-unused-expressions':
-    airbnbBestPractices['no-unused-expressions'],
+  '@typescript-eslint/no-unused-expressions': airbnbBestPractices['no-unused-expressions'],
 
   // Replace Airbnb 'no-unused-vars' rule with '@typescript-eslint' version
   // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars.md
@@ -214,14 +207,12 @@ export default {
   // Replace Airbnb 'no-use-before-define' rule with '@typescript-eslint' version
   // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-use-before-define.md
   'no-use-before-define': 'off',
-  '@typescript-eslint/no-use-before-define':
-    airbnbVariables['no-use-before-define'],
+  '@typescript-eslint/no-use-before-define': airbnbVariables['no-use-before-define'],
 
   // Replace Airbnb 'no-useless-constructor' rule with '@typescript-eslint' version
   // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-useless-constructor.md
   'no-useless-constructor': 'off',
-  '@typescript-eslint/no-useless-constructor':
-    airbnbES6['no-useless-constructor'],
+  '@typescript-eslint/no-useless-constructor': airbnbES6['no-useless-constructor'],
 
   // XXX: Removed from typescript-eslint v8.0.0
   // // Replace Airbnb 'quotes' rule with '@typescript-eslint' version
@@ -249,10 +240,7 @@ export default {
   // Replace Airbnb 'no-return-await' rule with '@typescript-eslint' version
   // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/return-await.md
   'no-return-await': 'off',
-  '@typescript-eslint/return-await': [
-    airbnbBestPractices['no-return-await'],
-    'in-try-catch',
-  ],
+  '@typescript-eslint/return-await': [airbnbBestPractices['no-return-await'], 'in-try-catch'],
 
   // XXX: Removed from typescript-eslint v8.0.0
   // // Replace Airbnb 'space-infix-ops' rule with '@typescript-eslint' version

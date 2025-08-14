@@ -225,11 +225,7 @@ export default {
 
   // require or disallow an empty line between class members
   // https://eslint.org/docs/rules/lines-between-class-members
-  'lines-between-class-members': [
-    'error',
-    'always',
-    { exceptAfterSingleLine: false },
-  ],
+  'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: false }],
 
   // enforces empty lines around comments
   'lines-around-comment': 'off',
@@ -561,11 +557,7 @@ export default {
 
   // require quotes around object literal property names
   // https://eslint.org/docs/rules/quote-props.html
-  'quote-props': [
-    'error',
-    'as-needed',
-    { keywords: false, unnecessary: true, numbers: false },
-  ],
+  'quote-props': ['error', 'as-needed', { keywords: false, unnecessary: true, numbers: false }],
 
   // specify whether double or single quotes should be used
   quotes: ['error', 'single', { avoidEscape: true }],
