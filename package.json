@@ -3,7 +3,7 @@
   "version": "0.2.1",
   "description": "ESLint configuration with support for Bun, TypeScript, and more",
   "repository": "github:maxmilton/eslint-config",
-  "homepage": "https://github.com/maxmilton/eslint-config",
+  "bugs": "https://github.com/maxmilton/eslint-config/issues",
   "author": "Max Milton <max@2okki.com>",
   "license": "MIT",
   "type": "module",
