@@ -1,6 +1,6 @@
 {
   "name": "@maxmilton/eslint-config",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "ESLint configuration with support for Bun, TypeScript, and more",
   "repository": "github:maxmilton/eslint-config",
   "bugs": "https://github.com/maxmilton/eslint-config/issues",
