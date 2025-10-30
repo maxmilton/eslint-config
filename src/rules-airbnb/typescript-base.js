@@ -9,6 +9,7 @@ import airbnbES6 from './es6.js';
 import airbnbStyle from './style.js';
 import airbnbVariables from './variables.js';
 
+/** @type {import('@eslint/core').RulesConfig} */
 export default {
   // plugins: ['@typescript-eslint'],
   // parser: '@typescript-eslint/parser',
@@ -239,8 +240,9 @@ export default {
 
   // Replace Airbnb 'no-return-await' rule with '@typescript-eslint' version
   // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/return-await.md
-  'no-return-await': 'off',
-  '@typescript-eslint/return-await': [airbnbBestPractices['no-return-await'], 'in-try-catch'],
+  "no-return-await": "off",
+  // "@typescript-eslint/return-await": [airbnbBestPractices["no-return-await"], "in-try-catch"],
+  "@typescript-eslint/return-await": ["error", "in-try-catch"],
 
   // XXX: Removed from typescript-eslint v8.0.0
   // // Replace Airbnb 'space-infix-ops' rule with '@typescript-eslint' version

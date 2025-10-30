@@ -1,6 +1,6 @@
 // https://github.com/airbnb/javascript/blob/6499695ac11c4640ed0f77f8865a1adcb32d3239/packages/eslint-config-airbnb-base/rules/best-practices.js
 
-/** @type {import('eslint').Linter.Config['rules']} */
+/** @type {import('@eslint/core').RulesConfig} */
 export default {
   // rules: {
 
