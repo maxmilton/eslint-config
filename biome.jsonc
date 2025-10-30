@@ -3,7 +3,8 @@
   "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
   "assist": {
     "actions": {
-      "recommended": true
+      "recommended": true,
+      "source": { "useSortedProperties": "on" }
     }
   },
   "formatter": {
@@ -20,7 +21,8 @@
         "noNonNullAssertion": "off"
       },
       "suspicious": {
-        "noAssignInExpressions": "off"
+        "noAssignInExpressions": "off",
+        "noConstEnum": "off"
       },
       "nursery": {
         "noUnresolvedImports": "off" // covered by typescript
@@ -28,10 +30,7 @@
     }
   },
   "javascript": {
-    "globals": ["Bun"],
-    "formatter": {
-      "quoteStyle": "single"
-    }
+    "globals": ["Bun"]
   },
   "overrides": [
     {
