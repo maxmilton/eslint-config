@@ -2,7 +2,7 @@
 
 import confusingBrowserGlobals from 'confusing-browser-globals';
 
-/** @type {import('eslint').Linter.Config['rules']} */
+/** @type {import('@eslint/core').RulesConfig} */
 export default {
   // rules: {
 
