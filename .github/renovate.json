@@ -4,5 +4,10 @@
     "config:best-practices",
     "github>maxmilton/renovate-config",
     "github>maxmilton/renovate-config:auto"
-  ]
+  ],
+  "schedule": ["at any time"],
+  "prConcurrentLimit": 0,
+  "prHourlyLimit": 0,
+  "rebaseWhen": "behind-base-branch",
+  "dependencyDashboardApproval": false
 }
