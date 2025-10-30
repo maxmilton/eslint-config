@@ -1,8 +1,8 @@
-import { expect, test } from 'bun:test';
+import { expect, test } from "bun:test";
 
-const func = /*@__NOINLINE__*/ () => 1 + 2;
+const func = /*@__NOINLINE__*/ () => 0xfe + 0x1;
 
-test('placeholder', () => {
+test("placeholder", () => {
   expect.assertions(1);
-  expect(func()).toBe(3);
+  expect(func()).toBe(0xff);
 });
