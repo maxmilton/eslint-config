@@ -20,4 +20,4 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
-      - uses: crate-ci/typos@07d900b8fa1097806b8adb6391b0d3e0ac2fdea7 # v1
+      - uses: crate-ci/typos@57b11c6b7e54c402ccd9cda953f1072ec4f78e33 # v1
