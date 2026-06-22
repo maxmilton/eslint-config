@@ -45,11 +45,12 @@ export default {
       },
     ],
     "unicorn/import-style": "warn",
+    "unicorn/name-replacements": "off",
     "unicorn/no-abusive-eslint-disable": "warn",
     "unicorn/no-null": "off",
     "unicorn/prefer-module": "warn",
     "unicorn/prefer-top-level-await": "warn",
-    "unicorn/prevent-abbreviations": "off",
+    "unicorn/prevent-abbreviations": "off", // renamed to 'name-replacements'
 
     /* Covered by Biome formatter */
     "@typescript-eslint/indent": "off",
