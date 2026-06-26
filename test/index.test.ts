@@ -5,7 +5,6 @@ import index from "../src/index.js";
 
 test("exports config object with recommended config", () => {
   expect.assertions(7);
-
   expect(index).toBeObject();
   expect(index).toHaveProperty("configs");
   expect(index.configs).toBeObject();
@@ -17,7 +16,6 @@ test("exports config object with recommended config", () => {
 
 test("recommended config has expected rules", () => {
   expect.assertions(6);
-
   const rules = index.configs.recommended.rules!;
 
   // Test some key rules that should be present
@@ -33,7 +31,6 @@ test("recommended config has expected rules", () => {
 
 test("recommended config disables rules covered by Biome", () => {
   expect.assertions(3);
-
   const rules = index.configs.recommended.rules!;
 
   // Check some key rules that should be off since they're covered by Biome formatter
