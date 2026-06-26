@@ -1,4 +1,2 @@
 [default]
-extend-ignore-identifiers-re = [
-  "IIFEs",
-]
+extend-ignore-identifiers-re = ["IIFEs"]
