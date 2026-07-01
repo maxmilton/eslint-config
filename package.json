@@ -24,7 +24,7 @@
     "@eslint/js": "^10.0.0",
     "eslint": "^10.0.0",
     "eslint-plugin-unicorn": ">=62.0.0",
-    "typescript-eslint": "^8.62.0"
+    "typescript-eslint": "^8.62.1"
   },
   "peerDependenciesMeta": {
     "eslint-plugin-unicorn": {
@@ -38,6 +38,6 @@
     "eslint": "10.6.0",
     "eslint-plugin-unicorn": "69.0.0",
     "typescript": "6.0.3",
-    "typescript-eslint": "8.62.0"
+    "typescript-eslint": "8.62.1"
   }
 }
