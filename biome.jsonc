@@ -4,7 +4,7 @@
   "assist": {
     "actions": {
       "preset": "recommended",
-      "source": { "useSortedProperties": "on" }
+      "source": { "useSortedPackageJson": "on" }
     }
   },
   "formatter": {
@@ -55,7 +55,7 @@
         }
       },
       "javascript": {
-        "globals": ["$console", "Bun", "happyDOM", "Loader"]
+        "globals": ["$console", "Bun", "happyDOM"]
       }
     }
   ]
