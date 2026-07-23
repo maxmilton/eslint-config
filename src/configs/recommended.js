@@ -49,6 +49,7 @@ export default {
     "unicorn/no-abusive-eslint-disable": "warn",
     "unicorn/no-null": "off",
     "unicorn/prefer-module": "warn",
+    "unicorn/prefer-simple-condition-first": "warn",
     "unicorn/prefer-string-repeat": "off", // render whitespace in code editors instead
     "unicorn/prefer-top-level-await": "warn",
     "unicorn/prevent-abbreviations": "off", // renamed to 'name-replacements'
