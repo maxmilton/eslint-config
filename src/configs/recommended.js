@@ -53,6 +53,7 @@ export default {
     "unicorn/prefer-string-repeat": "off", // render whitespace in code editors instead
     "unicorn/prefer-top-level-await": "warn",
     "unicorn/prevent-abbreviations": "off", // renamed to "name-replacements"
+    "unicorn/single-line-block-comment-style": "off",
 
     /* Covered by Biome formatter */
     "@typescript-eslint/indent": "off",
