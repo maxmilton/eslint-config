@@ -2,10 +2,8 @@
   "recommendations": [
     "biomejs.biome",
     "dbaeumer.vscode-eslint",
-    "MylesMurphy.prettify-ts",
     "oven.bun-vscode",
-    "tekumara.typos-vscode",
-    "YoavBls.pretty-ts-errors"
+    "tekumara.typos-vscode"
   ],
   "unwantedRecommendations": ["dprint.dprint", "esbenp.prettier-vscode", "prettier.prettier-vscode"]
 }
