@@ -20,7 +20,7 @@ test("recommended config has expected rules", () => {
 
   // Test some key rules that should be present
   expect(rules).toHaveProperty("quotes");
-  expect(rules.quotes).toEqual(["error", "double", { avoidEscape: true }]);
+  expect(rules["quotes"]).toEqual(["error", "double", { avoidEscape: true }]);
 
   expect(rules).toHaveProperty("@typescript-eslint/explicit-module-boundary-types");
   expect(rules["@typescript-eslint/explicit-module-boundary-types"]).toBe("error");
@@ -35,7 +35,7 @@ test("recommended config disables rules covered by Biome", () => {
 
   // Check some key rules that should be off since they're covered by Biome formatter
   expect(rules["@typescript-eslint/indent"]).toBe("off");
-  expect(rules.curly).toBe("off");
+  expect(rules["curly"]).toBe("off");
   expect(rules["max-len"]).toBe("off");
 });
 
