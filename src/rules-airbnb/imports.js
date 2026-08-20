@@ -1,26 +1,26 @@
 // https://github.com/airbnb/javascript/blob/6499695ac11c4640ed0f77f8865a1adcb32d3239/packages/eslint-config-airbnb-base/rules/imports.js
 
-/** @type {import('@eslint/core').RulesConfig} */
+/** @type {NonNullable<import("eslint").Linter.Config["rules"]>} */
 export default {
   // env: {
   //   es6: true,
   // },
   // parserOptions: {
   //   ecmaVersion: 6,
-  //   sourceType: 'module',
+  //   sourceType: "module",
   // },
-  // plugins: ['import'],
+  // plugins: ["import"],
 
   // settings: {
-  //   'import/resolver': {
+  //   "import/resolver": {
   //     node: {
-  //       extensions: ['.mjs', '.js', '.json'],
+  //       extensions: [".mjs", ".js", ".json"],
   //     },
   //   },
-  //   'import/extensions': ['.js', '.mjs', '.jsx'],
-  //   'import/core-modules': [],
-  //   'import/ignore': [
-  //     'node_modules',
+  //   "import/extensions": [".js", ".mjs", ".jsx"],
+  //   "import/core-modules": [],
+  //   "import/ignore": [
+  //     "node_modules",
   //     String.raw`\.(xcss|scss|css|less|svg|json)$`,
   //   ],
   // },
@@ -79,17 +79,17 @@ export default {
         "**/*{.,_}{test,spec}.{js,jsx,ts,tsx}", // tests where the extension or filename suffix denotes that it is a test
         "**/jest.config.js", // jest config
         "**/jest.setup.js", // jest setup
-        // '**/vue.config.js', // vue-cli config
-        // '**/webpack.config.js', // webpack config
-        // '**/webpack.config.*.js', // webpack config
+        // "**/vue.config.js", // vue-cli config
+        // "**/webpack.config.js", // webpack config
+        // "**/webpack.config.*.js", // webpack config
         "**/rollup.config.js", // rollup config
         "**/rollup.config.*.js", // rollup config
-        // '**/gulpfile.js', // gulp config
-        // '**/gulpfile.*.js', // gulp config
-        // '**/Gruntfile{,.js}', // grunt config
-        // '**/protractor.conf.js', // protractor config
-        // '**/protractor.conf.*.js', // protractor config
-        // '**/karma.conf.js', // karma config
+        // "**/gulpfile.js", // gulp config
+        // "**/gulpfile.*.js", // gulp config
+        // "**/Gruntfile{,.js}", // grunt config
+        // "**/protractor.conf.js", // protractor config
+        // "**/protractor.conf.*.js", // protractor config
+        // "**/karma.conf.js", // karma config
         "**/.eslintrc.js", // eslint config
       ],
       optionalDependencies: false,

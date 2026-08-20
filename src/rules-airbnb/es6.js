@@ -1,13 +1,13 @@
 // https://github.com/airbnb/javascript/blob/6499695ac11c4640ed0f77f8865a1adcb32d3239/packages/eslint-config-airbnb-base/rules/es6.js
 
-/** @type {import('@eslint/core').RulesConfig} */
+/** @type {NonNullable<import("eslint").Linter.Config["rules"]>} */
 export default {
   // env: {
   //   es6: true,
   // },
   // parserOptions: {
   //   ecmaVersion: 6,
-  //   sourceType: 'module',
+  //   sourceType: "module",
   //   ecmaFeatures: {
   //     generators: false,
   //     objectLiteralDuplicateProperties: false,
@@ -61,7 +61,7 @@ export default {
   // // disallow importing from the same path more than once
   // // https://eslint.org/docs/rules/no-duplicate-imports
   // // replaced by https://github.com/import-js/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md
-  // 'no-duplicate-imports': 'off',
+  // "no-duplicate-imports": "off",
 
   // disallow symbol constructor
   // https://eslint.org/docs/rules/no-new-symbol

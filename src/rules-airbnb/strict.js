@@ -1,7 +1,7 @@
 // https://github.com/airbnb/javascript/blob/6499695ac11c4640ed0f77f8865a1adcb32d3239/packages/eslint-config-airbnb-base/rules/strict.js
 
-/** @type {import('@eslint/core').RulesConfig} */
+/** @type {NonNullable<import("eslint").Linter.Config["rules"]>} */
 export default {
-  // babel inserts `'use strict';` for us
+  // babel inserts `"use strict";` for us
   strict: ["error", "never"],
 };

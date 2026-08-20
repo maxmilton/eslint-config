@@ -62,7 +62,7 @@ export const confusingBrowserGlobals = [
   "top",
 ];
 
-/** @type {import('@eslint/core').RulesConfig} */
+/** @type {NonNullable<import("eslint").Linter.Config["rules"]>} */
 export default {
   // enforce or disallow variable initializations at definition
   "init-declarations": "off",

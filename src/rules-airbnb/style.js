@@ -1,6 +1,6 @@
 // https://github.com/airbnb/javascript/blob/6499695ac11c4640ed0f77f8865a1adcb32d3239/packages/eslint-config-airbnb-base/rules/style.js
 
-/** @type {import('@eslint/core').RulesConfig} */
+/** @type {NonNullable<import("eslint").Linter.Config["rules"]>} */
 export default {
   // enforce line breaks after opening and before closing array brackets
   // https://eslint.org/docs/rules/array-bracket-newline
@@ -217,7 +217,7 @@ export default {
     },
   ],
 
-  // disallow mixed 'LF' and 'CRLF' as linebreaks
+  // disallow mixed "LF" and "CRLF" as linebreaks
   // https://eslint.org/docs/rules/linebreak-style
   "linebreak-style": ["error", "unix"],
 
@@ -558,7 +558,7 @@ export default {
   "quote-props": ["error", "as-needed", { keywords: false, unnecessary: true, numbers: false }],
 
   // // specify whether double or single quotes should be used
-  // quotes: ['error', 'single', { avoidEscape: true }],
+  // quotes: ["error", "single", { avoidEscape: true }],
 
   // do not require jsdoc
   // https://eslint.org/docs/rules/require-jsdoc
@@ -618,13 +618,13 @@ export default {
     "always",
     {
       line: {
-        // exceptions: ['-', '+'],
-        // markers: ['=', '!', '/'], // space here to support sprockets directives, slash for TS /// comments
+        // exceptions: ["-", "+"],
+        // markers: ["=", "!", "/"], // space here to support sprockets directives, slash for TS /// comments
         markers: ["!", "/"], // slash for TS /// comments
       },
       block: {
-        // exceptions: ['-', '+'],
-        // markers: ['=', '!', ':', '::'], // space here to support sprockets directives and flow comment types
+        // exceptions: ["-", "+"],
+        // markers: ["=", "!", ":", "::"], // space here to support sprockets directives and flow comment types
         markers: [
           "!",
           // Support minification annotations

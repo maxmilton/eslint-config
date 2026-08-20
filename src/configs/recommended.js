@@ -9,7 +9,7 @@ import airbnbVariables from "../rules-airbnb/variables.js";
 
 // REF: https://github.com/iamturns/eslint-config-airbnb-typescript/blob/303e346214847385bee4016367ff3b1b9978e337/lib/shared.js
 
-/** @type {import('eslint').Linter.Config} */
+/** @type {import("eslint").Linter.Config} */
 export default {
   rules: {
     // NOTE: The ../rules-airbnb/imports.js file is intentionally not included.
@@ -52,7 +52,7 @@ export default {
     "unicorn/prefer-simple-condition-first": "warn",
     "unicorn/prefer-string-repeat": "off", // render whitespace in code editors instead
     "unicorn/prefer-top-level-await": "warn",
-    "unicorn/prevent-abbreviations": "off", // renamed to 'name-replacements'
+    "unicorn/prevent-abbreviations": "off", // renamed to "name-replacements"
 
     /* Covered by Biome formatter */
     "@typescript-eslint/indent": "off",
