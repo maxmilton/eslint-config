@@ -61,14 +61,14 @@ export default {
       format: ["PascalCase"],
     },
 
-    // TODO: Add back. Nice to have but unreliable e.g., within `declare global` blocks.
-    // // XXX: Make same as oxc no-unused-vars rule; unused vars should be prefixed with an underscore; but no unused constants (UPPER_CASE)
-    // {
-    //   selector: "variable",
-    //   modifiers: ["unused"],
-    //   leadingUnderscore: "require",
-    //   format: ["camelCase", "PascalCase"],
-    // },
+    // Nice to have but unreliable e.g., var within `declare global` blocks.
+    // XXX: Make same as oxc no-unused-vars rule; unused vars should be prefixed with an underscore; but no unused constants (UPPER_CASE)
+    {
+      selector: "variable",
+      modifiers: ["unused"],
+      format: ["camelCase", "PascalCase"],
+      leadingUnderscore: "require",
+    },
   ],
 
   // XXX: Removed from typescript-eslint v8.0.0
