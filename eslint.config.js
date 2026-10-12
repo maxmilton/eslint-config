@@ -4,6 +4,7 @@ import unicorn from "eslint-plugin-unicorn";
 import ts from "typescript-eslint";
 import mm from "./src/index.js";
 
+// eslint-disable-next-line unicorn/no-top-level-side-effects
 export default defineConfig(
   js.configs.recommended,
   ts.configs.strictTypeChecked,
