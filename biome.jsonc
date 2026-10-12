@@ -19,6 +19,9 @@
     },
     "rules": {
       "preset": "recommended",
+      "complexity": {
+        "useLiteralKeys": "off" // covered by @typescript-eslint/dot-notation
+      },
       "correctness": {
         "noUnresolvedImports": "off" // covered by typescript
       },
