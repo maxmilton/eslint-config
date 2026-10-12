@@ -47,6 +47,7 @@ export default {
     "unicorn/import-style": "warn",
     "unicorn/name-replacements": "off",
     "unicorn/no-abusive-eslint-disable": "warn",
+    "unicorn/no-asterisk-prefix-in-documentation-comments": "off",
     "unicorn/no-null": "off",
     "unicorn/prefer-module": "warn",
     "unicorn/prefer-simple-condition-first": "warn",
@@ -71,8 +72,8 @@ export default {
     "space-before-function-paren": "off",
     "unicorn/no-nested-ternary": "off",
 
-    // TODO: Remove. This is actually great but Biome doesn't have a formatter
-    // config option for it and always uses lowercase.
+    // TODO: Remove. This is actually great but Biome and oxfmt do not have a
+    // formatter configuration option for it and always use lowercase.
     "unicorn/number-literal-case": "off",
   },
 };
