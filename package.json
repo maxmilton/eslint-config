@@ -30,10 +30,10 @@
     "typescript-eslint": "8.71.1"
   },
   "peerDependencies": {
-    "@eslint/js": "^10.0.0",
-    "eslint": "^10.0.0",
-    "eslint-plugin-unicorn": ">=73.0.0",
-    "typescript-eslint": "^8.68.0"
+    "@eslint/js": "10.x",
+    "eslint": "10.x",
+    "eslint-plugin-unicorn": ">=73",
+    "typescript-eslint": "8.x"
   },
   "peerDependenciesMeta": {
     "eslint-plugin-unicorn": {
