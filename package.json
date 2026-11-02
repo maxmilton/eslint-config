@@ -21,7 +21,7 @@
     "test:ci": "bun test --coverage --randomize --rerun-each=3"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.15",
+    "@biomejs/biome": "2.6.3",
     "@eslint/js": "10.0.1",
     "@types/bun": "1.4.4",
     "eslint": "10.13.0",
