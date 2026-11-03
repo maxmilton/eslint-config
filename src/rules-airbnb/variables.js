@@ -63,7 +63,6 @@ export const confusingBrowserGlobals = [
 ];
 
 /** @type {NonNullable<import("eslint").Linter.Config["rules"]>} */
-// eslint-disable-next-line unicorn/no-top-level-side-effects
 export default {
   // enforce or disallow variable initializations at definition
   "init-declarations": "off",
