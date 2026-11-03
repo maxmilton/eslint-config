@@ -1,6 +1,7 @@
 *-lock.json*
 *-lock.yaml
 *.lock
+*.tgz
 !/bun.lock
 /coverage/
 /node_modules/
